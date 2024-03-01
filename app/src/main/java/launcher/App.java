@@ -14,7 +14,7 @@ public class App {
                                     
  // Variables per Snake
     public ArrayList<Vector> snake = new ArrayList<Vector>();
-        	public Vector pos;
+        public Vector pos;
         public Vector dir = new Vector<>(0, 0);
         public Integer spd = 20;
         public Integer len = 5;
@@ -32,14 +32,16 @@ public class App {
     public Boolean Paused = true;
  //
 
+ // Create Window
     public void start() {
-        JFrame frame = new JFrame("Swing Window");
+        
+        JFrame frame = new JFrame("2-Player Snake");
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel label = new JLabel(getGreeting());
         frame.getContentPane().add(label);
 
-        frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
