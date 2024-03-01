@@ -12,7 +12,7 @@ public class App {
     }
  //
                                     
- // Variables
+ // Variables per Snake
     public ArrayList<Vector> snake = new ArrayList<Vector>();
         	public Vector pos;
         public Vector dir = new Vector<>(0, 0);
@@ -24,8 +24,13 @@ public class App {
         public Vector dir2 = new Vector<>(0, 0);
         public Integer spd2 = 20;
         public Integer len2 = 5;
- //
 
+ // General Variables
+    public Vector food;
+    public Integer size = 30;
+    public Integer w, h;
+    public Boolean Paused = true;
+ //
 
     public void start() {
         JFrame frame = new JFrame("Swing Window");
